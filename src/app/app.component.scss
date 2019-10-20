@@ -1,0 +1,15 @@
+$containerHeight: 300px;
+.container {
+  margin-top: 65px;
+  min-height: 350px;
+}
+
+.chat-container {
+  height: $containerHeight;
+  overflow: auto;
+}
+
+.chat-names-container {
+  max-height: $containerHeight;
+  overflow: auto;
+}

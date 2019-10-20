@@ -1,0 +1,71 @@
+{
+    "1": [
+        {
+            "id": 1,
+            "message": "hello how are you",
+            "byMe": false
+        },
+        {
+            "id": 2,
+            "message": "I am good",
+            "byMe": true
+        },
+        {
+            "id": 3,
+            "message": "what about you",
+            "byMe": true
+        },
+        {
+            "id": 4,
+            "message": "i am fine thankyou",
+            "byMe": false
+        },
+        {
+            "id": 5,
+            "message": "what is going on these days",
+            "byMe": false
+        },
+        {
+            "id": 6,
+            "message": "nothing much!",
+            "byMe": true
+        }
+    ],
+    "2": [
+        {
+            "id": 1,
+            "message": "hey whatsup!",
+            "byMe": true
+        },
+        {
+            "id": 2,
+            "message": "nothing, you",
+            "byMe": false
+        },
+        {
+            "id": 3,
+            "message": "can you help me",
+            "byMe": true
+        },
+        {
+            "id": 4,
+            "message": "for?",
+            "byMe": false
+        },
+        {
+            "id": 5,
+            "message": "on maths problem?",
+            "byMe": true
+        },
+        {
+            "id": 6,
+            "message": "sure!",
+            "byMe": false
+        },
+        {
+            "id": 7,
+            "message": "tonight?",
+            "byMe": false
+        }
+    ]
+}

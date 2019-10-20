@@ -1,0 +1,58 @@
+<div class="navbar is-fixed-top has-background-info">
+	<div class="navbar-item is-centered has-text-white">
+		Cognite Messenger
+	</div>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div class="column is-3">
+			<div class="columns is-multiline chat-names-container">
+				<div class="column is-12 has-text-centered has-background-grey-lighter has-border-dark">
+					Chats
+				</div>
+				<div class="column is-12 has-text-centered button" *ngFor="let chat of chats" (click)="selectChat(chat)">
+					{{chat.name}}
+				</div>
+			</div>
+		</div>
+		<div class="column is-9">
+			<div class="columns is-multiline">
+				<div class="column has-text-centered has-background-primary has-border-dark">
+					{{selectedChat.name}}
+				</div>
+				<div class="column is-12 chat-container has-background-white-bis">
+					<div id="chatLog" class="columns is-multiline is-centered">
+						<div class="column is-8 box" *ngFor="let message of chatMessages" 
+							[ngClass]="{'has-background-light':message.byMe}">
+							<div class="level-item" [ngClass]="{'is-pulled-left':message.byMe, 'is-pulled-right':!message.byMe}">
+								<span *ngIf="!message.byMe">
+									Me:
+								</span>
+								<span *ngIf="message.byMe">
+									{{selectedChat.name}}: 
+								</span>
+								<span>
+									<strong>
+										{{message.message}}
+									</strong>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-12 has-background-white-bis is-flex">
+					<form class="column is-full is-flex" (ngSubmit)="addToChat()">
+						<input class="input" type="text" name="input" placeholder="Write your message here..." 
+							[(ngModel)]="textMessage">
+						<button class="button" type="submit">
+							<div class="icon">
+								<i class="fa fa-chevron-right"></i>
+							</div>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
