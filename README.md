@@ -1,4 +1,4 @@
-# Time limit 3 days
+## Time limit 3 days
 
 
 # CogniteProject
@@ -12,3 +12,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Sample data is in assets folder for two chats based on their ids.
 
 Kindly update the packages by running `npm install` when you clone the repo locally. 
+
+This was frontend challenge to create a very basic web application similar to whatsapp web.
